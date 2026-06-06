@@ -1,0 +1,618 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e5] [cursor=pointer]:
+        - generic [ref=e6]: K
+        - generic [ref=e7]: Kartik's Portfolio
+        - img [ref=e8]
+      - navigation [ref=e10]:
+        - generic [ref=e11]: Document Sections
+        - link "📄 Overview" [ref=e12] [cursor=pointer]:
+          - /url: "#header"
+          - generic [ref=e13]: 📄
+          - generic [ref=e14]: Overview
+        - link "🔴 Problem Statement" [ref=e15] [cursor=pointer]:
+          - /url: "#problem"
+          - generic [ref=e16]: 🔴
+          - generic [ref=e17]: Problem Statement
+        - link "🔍 User Research" [ref=e18] [cursor=pointer]:
+          - /url: "#research"
+          - generic [ref=e19]: 🔍
+          - generic [ref=e20]: User Research
+        - link "👤 User Persona" [ref=e21] [cursor=pointer]:
+          - /url: "#persona"
+          - generic [ref=e22]: 👤
+          - generic [ref=e23]: User Persona
+        - link "💡 Proposed Solution" [ref=e24] [cursor=pointer]:
+          - /url: "#solution"
+          - generic [ref=e25]: 💡
+          - generic [ref=e26]: Proposed Solution
+        - link "📊 Success Metrics" [ref=e27] [cursor=pointer]:
+          - /url: "#metrics"
+          - generic [ref=e28]: 📊
+          - generic [ref=e29]: Success Metrics
+        - link "🚀 Shipped Backlog" [ref=e30] [cursor=pointer]:
+          - /url: "#backlog"
+          - generic [ref=e31]: 🚀
+          - generic [ref=e32]: Shipped Backlog
+        - link "🧠 Product Thinking" [ref=e33] [cursor=pointer]:
+          - /url: "#thinking"
+          - generic [ref=e34]: 🧠
+          - generic [ref=e35]: Product Thinking
+        - link "✅ Acceptance Criteria" [ref=e36] [cursor=pointer]:
+          - /url: "#acceptance"
+          - generic [ref=e37]: ✅
+          - generic [ref=e38]: Acceptance Criteria
+      - generic [ref=e39]:
+        - link "Contact" [ref=e40] [cursor=pointer]:
+          - /url: mailto:kartikdaswani07@gmail.com
+          - img [ref=e41]
+          - generic [ref=e44]: Contact
+        - generic [ref=e45]: Open to work
+    - main [ref=e47]:
+      - article [ref=e48]:
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e51]: Kartik's Portfolio
+            - generic [ref=e52]: /
+            - generic [ref=e53]: Hire Me — PRD
+          - generic [ref=e54]:
+            - generic [ref=e55]: 📋
+            - heading "Hiring Kartik Daswani" [level=1] [ref=e56]
+            - paragraph [ref=e57]: AI Product Manager · B2B SaaS & Fintech · ships full-stack products with AI
+            - generic [ref=e58]:
+              - generic [ref=e59]: 20+ products & features shipped
+              - generic [ref=e60]: ·
+              - generic [ref=e61]: $1M+ processed
+              - generic [ref=e62]: ·
+              - generic [ref=e63]: 90% manual work cut
+            - paragraph [ref=e64]: "A Product Requirements Document for your next hire. Status: Open to Hire. Priority: P0."
+          - generic [ref=e67]:
+            - generic:
+              - generic: The candidate
+              - generic: A PM who opens the terminal and ships.
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - generic [ref=e76]: Status
+              - generic [ref=e77]: 🟢 Open to Hire
+            - generic [ref=e78]:
+              - generic [ref=e79]: Priority
+              - generic [ref=e80]: P0 — Critical
+            - generic [ref=e81]:
+              - generic [ref=e82]: Owner
+              - generic [ref=e83]: Kartik Daswani
+            - generic [ref=e84]:
+              - generic [ref=e85]: Role
+              - generic [ref=e86]: AI Product Manager
+            - generic [ref=e87]:
+              - generic [ref=e88]: Location
+              - generic [ref=e89]: Mumbai, India
+            - generic [ref=e90]:
+              - generic [ref=e91]: Version
+              - generic [ref=e92]: v2.0 — June 2026
+            - generic [ref=e93]:
+              - generic [ref=e94]: Tags
+              - generic [ref=e95]:
+                - generic [ref=e96]: PM who ships
+                - generic [ref=e97]: CS Engineer
+                - generic [ref=e98]: AI Builder
+                - generic [ref=e99]: B2B SaaS
+        - generic [ref=e101]:
+          - heading "🔴 Problem Statement" [level=2] [ref=e103]:
+            - generic [ref=e104]: 🔴
+            - text: Problem Statement
+          - generic [ref=e108]:
+            - generic [ref=e109]: ⚠️
+            - generic [ref=e110]:
+              - strong [ref=e111]: "TL;DR:"
+              - text: Most product managers cannot ship a product. They can write a doc about one. They can present slides about one. They can schedule meetings about one. But actually building, deploying, and debugging a product in production? That's where it falls apart.
+          - generic [ref=e113]:
+            - generic [ref=e114]: The
+            - generic [ref=e115]: hiring
+            - generic [ref=e116]: pipeline
+            - generic [ref=e117]: for
+            - generic [ref=e118]: product
+            - generic [ref=e119]: managers
+            - generic [ref=e120]: is
+            - generic [ref=e121]: broken.
+            - generic [ref=e122]: Here's
+            - generic [ref=e123]: "why:"
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - generic [ref=e127]: 45%
+              - generic [ref=e128]: of product launches ship late. — Gartner, 2019
+            - generic [ref=e129]:
+              - generic [ref=e130]: 45%
+              - generic [ref=e131]: of shipped features are never used. — Standish CHAOS
+          - list [ref=e133]:
+            - listitem [ref=e134]:
+              - generic [ref=e135]: "1."
+              - generic [ref=e136]:
+                - strong [ref=e137]: "The Handoff Gap:"
+                - text: PM writes spec → throws over wall → engineer builds something different → PM blames engineer → feature ships 3 months late → users hate it. Repeat.
+            - listitem [ref=e138]:
+              - generic [ref=e139]: "2."
+              - generic [ref=e140]:
+                - strong [ref=e141]: "The Technical Debt of Ignorance:"
+                - text: A PM who can't read a stack trace makes decisions that sound smart in a meeting and cost the team 3 sprints.
+            - listitem [ref=e142]:
+              - generic [ref=e143]: "3."
+              - generic [ref=e144]:
+                - strong [ref=e145]: "The Spec Fantasy:"
+                - text: The PRD describes a product that doesn't exist. It won't exist. It can't exist. But it looks great in Notion.
+          - generic [ref=e149]:
+            - paragraph [ref=e150]: "The common failure mode: a PM writes a beautiful PRD, but the spec and the shipped product end up as two completely different things."
+            - paragraph [ref=e151]: — The gap this portfolio is built to close.
+          - generic [ref=e155]:
+            - generic [ref=e156]: 💡
+            - generic [ref=e157]:
+              - strong [ref=e158]: "Hypothesis:"
+              - text: What if the PM could also... build the product? Like, literally. Write the code. Deploy it. Debug it at 11pm when it breaks. Radical idea, I know.
+        - generic [ref=e160]:
+          - generic [ref=e161]:
+            - heading "🔍 User Research" [level=2] [ref=e162]:
+              - generic [ref=e163]: 🔍
+              - text: User Research
+            - paragraph [ref=e164]: "A PM's first move is primary research. So here's that move, applied to the “product” this page is really about: the hire."
+          - generic [ref=e168]:
+            - generic [ref=e169]: 📌
+            - generic [ref=e170]: The voices below are illustrative composites — the recurring “jobs to be done” I hear from hiring teams, framed as a PM would frame user-research findings.
+          - generic [ref=e171]:
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - generic [ref=e177]:
+                  - generic [ref=e178]: Hiring Manager
+                  - generic [ref=e179]: Series B SaaS
+                - generic [ref=e180]: Technical fluency
+              - paragraph [ref=e183]: “I need someone who can talk to engineers as an equal, not a translator standing between us and the user.”
+            - generic [ref=e187]:
+              - generic [ref=e188]:
+                - generic [ref=e189]:
+                  - generic [ref=e190]: CTO
+                  - generic [ref=e191]: B2B Startup
+                - generic [ref=e192]: Shipping ability
+              - paragraph [ref=e195]: “Show me someone who has actually deployed something to production. Not just reviewed a deploy. Deployed it.”
+            - generic [ref=e199]:
+              - generic [ref=e200]:
+                - generic [ref=e201]:
+                  - generic [ref=e202]: Founder
+                  - generic [ref=e203]: AI Product Co.
+                - generic [ref=e204]: Technical depth
+              - paragraph [ref=e207]: “I want a PM who can open a terminal. Who understands why something is technically hard — not just that it is.”
+            - generic [ref=e211]:
+              - generic [ref=e212]:
+                - generic [ref=e213]:
+                  - generic [ref=e214]: VP Product
+                  - generic [ref=e215]: Enterprise SaaS
+                - generic [ref=e216]: Full-stack PM
+              - paragraph [ref=e219]: “Stop sending me PMs who need a 'technical PM' to co-pilot them. I need one PM who does both.”
+          - generic [ref=e223]:
+            - generic [ref=e224]: 🎯
+            - generic [ref=e225]:
+              - strong [ref=e226]: "The insight:"
+              - text: the ask is always the same person — a PM who doesn't just own the roadmap, but owns the repo. That's the gap this page is making the case for.
+        - generic [ref=e228]:
+          - generic [ref=e229]:
+            - heading "👤 User Persona" [level=2] [ref=e230]:
+              - generic [ref=e231]: 👤
+              - text: User Persona
+            - paragraph [ref=e232]: Since every good product starts with a user persona, here's the candidate profile for the solution to your PM problem.
+          - generic [ref=e235]:
+            - generic [ref=e237]:
+              - generic [ref=e238]: KD
+              - generic [ref=e239]:
+                - generic [ref=e240]: Kartik Daswani
+                - generic [ref=e241]: AI PM at FactWise · CS Engineer · Mumbai
+            - generic [ref=e242]:
+              - generic [ref=e243]:
+                - generic [ref=e244]: Education & Background
+                - generic [ref=e245]: B.Tech Computer Engineering, NMIMS — 8.65 GPA
+              - generic [ref=e246]:
+                - generic [ref=e247]: Experience
+                - generic [ref=e248]: AI PM (FactWise) · Product Manager (CryptoTax) · PM Intern (Accion Labs)
+              - generic [ref=e249]:
+                - generic [ref=e250]: Superpower
+                - generic [ref=e251]: Writes the PRD, builds the product, deploys it, debugs it at 11pm
+            - generic [ref=e252]:
+              - generic [ref=e253]:
+                - generic [ref=e254]: Goals
+                - list [ref=e255]:
+                  - listitem [ref=e256]: → Ship, not just spec
+                  - listitem [ref=e257]: → Own outcomes end-to-end
+                  - listitem [ref=e258]: → Build with AI, not just about it
+              - generic [ref=e259]:
+                - generic [ref=e260]: Pain Points
+                - list [ref=e261]:
+                  - listitem [ref=e262]: → "Just write the PRD"
+                  - listitem [ref=e263]: → No deploy access
+                  - listitem [ref=e264]: → Spec → handoff → pray
+              - generic [ref=e265]:
+                - generic [ref=e266]: Actual Behaviors
+                - list [ref=e267]:
+                  - listitem [ref=e268]: → Opens terminal at 11pm
+                  - listitem [ref=e269]: → Debugs prod bugs himself
+                  - listitem [ref=e270]: → Writes PRD AND the code
+            - generic [ref=e272]:
+              - generic [ref=e273]: Tech Stack
+              - generic [ref=e274]:
+                - generic [ref=e275]: FastAPI
+                - generic [ref=e276]: React
+                - generic [ref=e277]: TypeScript
+                - generic [ref=e278]: Python
+                - generic [ref=e279]: Azure
+                - generic [ref=e280]: PostgreSQL
+                - generic [ref=e281]: Docker
+                - generic [ref=e282]: Claude Code
+                - generic [ref=e283]: AWS
+        - generic [ref=e285]:
+          - generic [ref=e286]:
+            - heading "💡 Proposed Solution" [level=2] [ref=e287]:
+              - generic [ref=e288]: 💡
+              - text: Proposed Solution
+            - paragraph [ref=e289]: "Hire Kartik Daswani. Specifically, here's what you get:"
+          - generic [ref=e290]:
+            - generic [ref=e294]:
+              - generic [ref=e295]: 🏗️
+              - generic [ref=e296]:
+                - generic [ref=e297]:
+                  - heading "AI Invoice OCR System" [level=3] [ref=e298]
+                  - generic [ref=e299]: at FactWise
+                - paragraph [ref=e300]: "Built end-to-end: FastAPI backend, React frontend, Azure Document Intelligence. Confidence scoring, multi-level approval workflows. Cut client invoice processing from manual hours to under 2 minutes."
+                - generic [ref=e301]:
+                  - generic [ref=e302]: 90% reduction in manual work
+                  - link "🌐 Live at FactWise" [ref=e303] [cursor=pointer]:
+                    - /url: https://factwise.io
+                    - generic [ref=e304]: 🌐
+                    - text: Live at FactWise
+                    - img [ref=e305]
+                  - button "Watch demo" [ref=e309]:
+                    - img [ref=e310]
+                    - text: Watch demo
+            - generic [ref=e315]:
+              - generic [ref=e316]: 🗺️
+              - generic [ref=e317]:
+                - generic [ref=e318]:
+                  - heading "BOM Data Mapper" [level=3] [ref=e319]
+                  - generic [ref=e320]: at FactWise
+                - paragraph [ref=e321]: Visual column mapping, fuzzy matching, PDF zone extraction, reusable templates. Validated with enterprise client who confirmed efficiency gain worth INR 10–12L/year per deployment.
+                - generic [ref=e322]:
+                  - generic [ref=e323]: 60% efficiency gain
+                  - link "🌐 Live at FactWise" [ref=e324] [cursor=pointer]:
+                    - /url: https://factwise.io
+                    - generic [ref=e325]: 🌐
+                    - text: Live at FactWise
+                    - img [ref=e326]
+                  - button "Watch demo" [ref=e330]:
+                    - img [ref=e331]
+                    - text: Watch demo
+            - generic [ref=e336]:
+              - generic [ref=e337]: 📊
+              - generic [ref=e338]:
+                - generic [ref=e339]:
+                  - heading "RFQ Analytics Rebuild" [level=3] [ref=e340]
+                  - generic [ref=e341]: at FactWise
+                - paragraph [ref=e342]: The platform's most critical dashboard was broken. Rebuilt from the ground up — aggregating vendor bids, landed costs, real-time analytics. Now used actively by 4 enterprise clients.
+                - generic [ref=e343]:
+                  - generic [ref=e344]: Critical system → stable
+                  - link "🌐 Live at FactWise" [ref=e345] [cursor=pointer]:
+                    - /url: https://factwise.io
+                    - generic [ref=e346]: 🌐
+                    - text: Live at FactWise
+                    - img [ref=e347]
+                  - button "Watch demo" [ref=e351]:
+                    - img [ref=e352]
+                    - text: Watch demo
+            - generic [ref=e357]:
+              - generic [ref=e358]: 🧮
+              - generic [ref=e359]:
+                - generic [ref=e360]:
+                  - heading "CryptoTax Automation Pipeline" [level=3] [ref=e361]
+                  - generic [ref=e362]: at CryptoTax International
+                - paragraph [ref=e363]: Automated the full crypto-tax pipeline — cost-basis, gain/loss logic, Form 8949 generation. Processes files up to 80K line items in 2–3 hours vs. months manually, at 98–99% accuracy. Scaled the platform to 30+ clients and $1M+ in processed tax value.
+                - generic [ref=e364]:
+                  - generic [ref=e365]: Months → 2–3 hours
+                  - link "🌐 CryptoTax International" [ref=e366] [cursor=pointer]:
+                    - /url: https://cryptotax.international
+                    - generic [ref=e367]: 🌐
+                    - text: CryptoTax International
+                    - img [ref=e368]
+                  - button "Watch demo" [ref=e372]:
+                    - img [ref=e373]
+                    - text: Watch demo
+          - generic [ref=e376]:
+            - generic [ref=e377]: 🤔
+            - generic [ref=e378]:
+              - strong [ref=e379]: Wait, the PM built these?
+              - text: Yes. Personally. With AI tools (Claude Code), shipped to production and maintained live. This isn't "I supervised the build." It's "I scoped it, built it, tested it, and shipped it."
+        - generic [ref=e381]:
+          - generic [ref=e382]:
+            - heading "📊 Success Metrics" [level=2] [ref=e383]:
+              - generic [ref=e384]: 📊
+              - text: Success Metrics
+            - paragraph [ref=e385]: Every number here is a shipped product, not a Jira ticket that got moved to "Done" without anyone checking.
+          - generic [ref=e386]:
+            - generic [ref=e390]:
+              - generic [ref=e391]: 0+
+              - generic [ref=e392]: Features shipped
+              - generic [ref=e393]: PRD → production
+            - generic [ref=e397]:
+              - generic [ref=e398]: 0%
+              - generic [ref=e399]: Manual work cut
+              - generic [ref=e400]: Invoice OCR
+            - generic [ref=e404]:
+              - generic [ref=e405]: "0"
+              - generic [ref=e406]: Full products built
+              - generic [ref=e407]: Solo, shipped to production
+            - generic [ref=e411]:
+              - generic [ref=e412]: 0%
+              - generic [ref=e413]: Efficiency gain
+              - generic [ref=e414]: BOM Mapper, client-validated
+            - generic [ref=e418]:
+              - generic [ref=e419]: $0M+
+              - generic [ref=e420]: Tax value processed
+              - generic [ref=e421]: CryptoTax · 30+ clients
+            - generic [ref=e425]:
+              - generic [ref=e426]: 0st
+              - generic [ref=e427]: Productathon
+              - generic [ref=e428]: Won 1st place
+          - generic [ref=e430]:
+            - generic [ref=e431]: 📈
+            - generic [ref=e432]:
+              - strong [ref=e433]: "Note on methodology:"
+              - text: These metrics are from production systems used by real clients, not from a demo that crashed after the investor meeting.
+        - generic [ref=e435]:
+          - generic [ref=e436]:
+            - heading "📋 Shipped Backlog" [level=2] [ref=e437]:
+              - generic [ref=e438]: 📋
+              - text: Shipped Backlog
+            - paragraph [ref=e439]: "Status: All items shipped to production · Sprint: Every sprint since day 1"
+            - generic [ref=e440]:
+              - generic [ref=e441]: 📌
+              - generic [ref=e442]: These aren't "projects I managed." These are products I personally built, deployed, and maintained. The backlog is the portfolio.
+          - generic [ref=e447]:
+            - generic [ref=e452]:
+              - generic [ref=e453]:
+                - generic [ref=e454]:
+                  - generic [ref=e455]: CASE-001
+                  - heading "AI Invoice OCR System" [level=3] [ref=e456]
+                  - generic [ref=e457]: at FactWise
+                - paragraph [ref=e458]: "End-to-end invoice processing: OCR extraction, confidence scoring, multi-level approval workflows. Replaced hours of manual data entry with sub-2-minute automated pipeline."
+              - generic [ref=e459]:
+                - generic [ref=e460]: Shipped
+                - generic [ref=e461]: P0
+                - generic [ref=e462]: 90% reduction in manual work
+                - generic [ref=e463]:
+                  - generic [ref=e464]: FastAPI
+                  - generic [ref=e465]: React
+                  - generic [ref=e466]: Azure Doc Intelligence
+              - generic [ref=e467]:
+                - link "Live product" [ref=e468] [cursor=pointer]:
+                  - /url: https://factwise.io
+                  - img [ref=e469]
+                  - text: Live product
+                - link "Request demo" [ref=e473] [cursor=pointer]:
+                  - /url: "mailto:kartikdaswani07@gmail.com?subject=Demo Request: Invoice OCR System"
+                  - img [ref=e474]
+                  - text: Request demo
+            - generic [ref=e480]:
+              - generic [ref=e481]:
+                - generic [ref=e482]:
+                  - generic [ref=e483]: CASE-002
+                  - heading "RFQ Analytics Rebuild" [level=3] [ref=e484]
+                  - generic [ref=e485]: at FactWise
+                - paragraph [ref=e486]: The platform's most critical dashboard was broken beyond repair. Rebuilt from scratch — vendor bid aggregation, landed cost calculations, real-time analytics. Now used actively by 4 enterprise clients.
+              - generic [ref=e487]:
+                - generic [ref=e488]: Shipped
+                - generic [ref=e489]: P0
+                - generic [ref=e490]: Critical system → stable
+                - generic [ref=e491]:
+                  - generic [ref=e492]: React
+                  - generic [ref=e493]: TypeScript
+                  - generic [ref=e494]: PostgreSQL
+              - generic [ref=e495]:
+                - link "Live product" [ref=e496] [cursor=pointer]:
+                  - /url: https://factwise.io
+                  - img [ref=e497]
+                  - text: Live product
+                - link "Request demo" [ref=e501] [cursor=pointer]:
+                  - /url: "mailto:kartikdaswani07@gmail.com?subject=Demo Request: RFQ Analytics"
+                  - img [ref=e502]
+                  - text: Request demo
+            - generic [ref=e508]:
+              - generic [ref=e509]:
+                - generic [ref=e510]:
+                  - generic [ref=e511]: CASE-003
+                  - heading "BOM Data Mapper" [level=3] [ref=e512]
+                  - generic [ref=e513]: at FactWise
+                - paragraph [ref=e514]: Visual column mapping tool with fuzzy matching, PDF zone extraction, reusable templates. Enterprise client confirmed efficiency gain worth INR 10–12L/year per deployment.
+              - generic [ref=e515]:
+                - generic [ref=e516]: Shipped
+                - generic [ref=e517]: P1
+                - generic [ref=e518]: 60% efficiency gain
+                - generic [ref=e519]:
+                  - generic [ref=e520]: React
+                  - generic [ref=e521]: Python
+                  - generic [ref=e522]: PDF extraction
+              - generic [ref=e523]:
+                - link "Live product" [ref=e524] [cursor=pointer]:
+                  - /url: https://factwise.io
+                  - img [ref=e525]
+                  - text: Live product
+                - link "Request demo" [ref=e529] [cursor=pointer]:
+                  - /url: "mailto:kartikdaswani07@gmail.com?subject=Demo Request: BOM Mapper"
+                  - img [ref=e530]
+                  - text: Request demo
+            - generic [ref=e536]:
+              - generic [ref=e537]:
+                - generic [ref=e538]:
+                  - generic [ref=e539]: CASE-004
+                  - heading "CryptoTax Automation Pipeline" [level=3] [ref=e540]
+                  - generic [ref=e541]: at CryptoTax International
+                - paragraph [ref=e542]: Automated the full crypto-tax pipeline — cost-basis, gain/loss logic, Form 8949 generation. Processes files up to 80K line items in 2–3 hours vs. months manually, at 98–99% accuracy. Scaled to 30+ clients and $1M+ in processed tax value.
+              - generic [ref=e543]:
+                - generic [ref=e544]: Shipped
+                - generic [ref=e545]: P0
+                - generic [ref=e546]: Months → 2–3 hours
+                - generic [ref=e547]:
+                  - generic [ref=e548]: Python
+                  - generic [ref=e549]: Web scraping
+                  - generic [ref=e550]: AI-assisted dev
+              - link "CryptoTax.international" [ref=e552] [cursor=pointer]:
+                - /url: https://cryptotax.international
+                - img [ref=e553]
+                - text: CryptoTax.international
+        - generic [ref=e558]:
+          - generic [ref=e559]:
+            - heading "🧠 Product Thinking" [level=2] [ref=e560]:
+              - generic [ref=e561]: 🧠
+              - text: Product Thinking
+            - paragraph [ref=e562]: PRDs, competitions, and demos. Proof that the PM thinks before building — and then builds anyway.
+          - generic [ref=e565]:
+            - button "▶ 📝 PRDs Written (7)" [ref=e566] [cursor=pointer]:
+              - generic [ref=e567]: ▶
+              - generic [ref=e568]: 📝
+              - generic [ref=e569]: PRDs Written (7)
+            - generic [ref=e570]:
+              - generic [ref=e571]:
+                - generic [ref=e572]:
+                  - img [ref=e573]
+                  - generic [ref=e577]: AI Ad Verification Tool
+                  - generic [ref=e578]: AI/ML
+                  - link "Read PRD" [ref=e579] [cursor=pointer]:
+                    - /url: /prds/ai-ad-verification.pdf
+                    - text: Read PRD
+                    - img [ref=e580]
+                - generic [ref=e584]:
+                  - img [ref=e585]
+                  - generic [ref=e589]: AI-Aided Income Tax Filing
+                  - generic [ref=e590]: AI/ML
+                  - link "Read PRD" [ref=e591] [cursor=pointer]:
+                    - /url: /prds/ai-income-tax-filing.pdf
+                    - text: Read PRD
+                    - img [ref=e592]
+                - generic [ref=e596]:
+                  - img [ref=e597]
+                  - generic [ref=e601]: Zepto — Enhanced Grocery Experience
+                  - generic [ref=e602]: Product
+                  - link "Read PRD" [ref=e603] [cursor=pointer]:
+                    - /url: /prds/zepto-frd.pdf
+                    - text: Read PRD
+                    - img [ref=e604]
+                - generic [ref=e608]:
+                  - img [ref=e609]
+                  - generic [ref=e613]: Sukoon — Gamified Mental Health App
+                  - generic [ref=e614]: Product
+                  - link "Read PRD" [ref=e615] [cursor=pointer]:
+                    - /url: /prds/sukoon.pdf
+                    - text: Read PRD
+                    - img [ref=e616]
+                - generic [ref=e620]:
+                  - img [ref=e621]
+                  - generic [ref=e625]: Credit-Pesa
+                  - generic [ref=e626]: Fintech
+                  - link "Read PRD" [ref=e627] [cursor=pointer]:
+                    - /url: /prds/credit-pesa.pdf
+                    - text: Read PRD
+                    - img [ref=e628]
+                - generic [ref=e632]:
+                  - img [ref=e633]
+                  - generic [ref=e637]: Traffic Decongestion
+                  - generic [ref=e638]: Civic Tech
+                  - link "Read PRD" [ref=e639] [cursor=pointer]:
+                    - /url: /prds/traffic-decongestion.pdf
+                    - text: Read PRD
+                    - img [ref=e640]
+                - generic [ref=e644]:
+                  - img [ref=e645]
+                  - generic [ref=e649]: Shopify Analytics Dashboard
+                  - generic [ref=e650]: Analytics
+                  - link "Read PRD" [ref=e651] [cursor=pointer]:
+                    - /url: /prds/shopify-analytics.pdf
+                    - text: Read PRD
+                    - img [ref=e652]
+              - paragraph [ref=e656]: Full PRDs — open and read each one. Hover a row to expand its description.
+          - button "▶ 🏅 Competitions (2 wins)" [ref=e660] [cursor=pointer]:
+            - generic [ref=e661]: ▶
+            - generic [ref=e662]: 🏅
+            - generic [ref=e663]: Competitions (2 wins)
+          - button "▶ 🎬 Video Demos (2)" [ref=e667] [cursor=pointer]:
+            - generic [ref=e668]: ▶
+            - generic [ref=e669]: 🎬
+            - generic [ref=e670]: Video Demos (2)
+          - generic [ref=e672]:
+            - generic [ref=e673]: 💡
+            - generic [ref=e674]:
+              - strong [ref=e675]: "The full picture:"
+              - text: 7 PRDs written, 4 products shipped to production, 2 competition wins, 2 video demos. This isn't a portfolio — it's a shipping log.
+        - generic [ref=e677]:
+          - generic [ref=e678]:
+            - heading "✅ Acceptance Criteria" [level=2] [ref=e679]:
+              - generic [ref=e680]: ✅
+              - text: Acceptance Criteria
+            - paragraph [ref=e681]: No PRD is complete without acceptance criteria. Scroll to verify the candidate meets spec.
+          - generic [ref=e685]:
+            - generic [ref=e686]:
+              - img [ref=e687]
+              - generic [ref=e690]:
+                - generic [ref=e691]: "0"
+                - generic [ref=e692]: /8
+            - generic [ref=e693]:
+              - generic [ref=e694]: Scroll to verify...
+              - generic [ref=e695]: Keep scrolling to run acceptance checks.
+          - generic [ref=e696]:
+            - generic [ref=e697]:
+              - generic [ref=e698]: ☐
+              - generic [ref=e699]: Can write a PRD that actually matches the shipped product
+            - generic [ref=e700]:
+              - generic [ref=e701]: ☐
+              - generic [ref=e702]: Can open a terminal and deploy to production
+            - generic [ref=e703]:
+              - generic [ref=e704]: ☐
+              - generic [ref=e705]: Can debug at 11pm without paging the on-call engineer
+            - generic [ref=e706]:
+              - generic [ref=e707]: ☐
+              - generic [ref=e708]: Can talk to engineers without a translator
+            - generic [ref=e709]:
+              - generic [ref=e710]: ☐
+              - generic [ref=e711]: Can read a stack trace and know what went wrong
+            - generic [ref=e712]:
+              - generic [ref=e713]: ☐
+              - generic [ref=e714]: Has shipped 20+ features and 2 full products to production
+            - generic [ref=e715]:
+              - generic [ref=e716]: ☐
+              - generic [ref=e717]: Won 1st place at a Productathon
+            - generic [ref=e718]:
+              - generic [ref=e719]: ☐
+              - generic [ref=e720]: Built this portfolio website as a PRD (yes, this one)
+          - generic [ref=e722]:
+            - generic [ref=e723]: 🚀
+            - generic [ref=e724]:
+              - strong [ref=e725]: "Next Step:"
+              - text: Move this candidate from Backlog to In Progress. Schedule an interview. Or just email him — he responds faster than your CI/CD pipeline.
+          - link "Hire This PM" [ref=e728] [cursor=pointer]:
+            - /url: mailto:kartikdaswani07@gmail.com
+            - button "Hire This PM" [ref=e729]:
+              - generic:
+                - img
+                - text: Hire This PM
+          - generic [ref=e735]:
+            - generic [ref=e736]: Contact
+            - generic [ref=e737]:
+              - link "kartikdaswani07@gmail.com" [ref=e738] [cursor=pointer]:
+                - /url: mailto:kartikdaswani07@gmail.com
+                - img [ref=e739]
+                - text: kartikdaswani07@gmail.com
+              - link "LinkedIn" [ref=e742] [cursor=pointer]:
+                - /url: https://linkedin.com/in/kartik-daswani
+                - img [ref=e743]
+                - text: LinkedIn
+              - link "GitHub" [ref=e747] [cursor=pointer]:
+                - /url: https://github.com/kartikd26
+                - img [ref=e748]
+                - text: GitHub
+          - generic [ref=e751]:
+            - paragraph [ref=e752]: Built with Next.js, Tailwind, and Framer Motion. Deployed on Vercel.
+            - paragraph [ref=e753]: Written as a PRD because the PM couldn't resist the format.
+            - paragraph [ref=e754]: © 2026 Kartik Daswani. All rights shipped.
+  - button "Open Next.js Dev Tools" [ref=e760] [cursor=pointer]:
+    - img [ref=e761]

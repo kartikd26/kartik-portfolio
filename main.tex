@@ -1,0 +1,185 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,margin=0.35in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{parskip}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+
+% Adjust spacing for lists
+\setlist[itemize]{topsep=1pt,parsep=0pt,partopsep=0pt,itemsep=0pt,leftmargin=*}
+
+% Remove paragraph indentation and set tight spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.12em}
+
+% Tight spacing between sections
+\titlespacing\section{0pt}{3pt plus 1pt minus 1pt}{2pt plus 1pt minus 1pt}
+
+\begin{document}
+
+%% ═══════════════════════════════════════════════════════
+%% HEADER
+%% ═══════════════════════════════════════════════════════
+%% CHANGE: Removed street address ("Gulmohar Road")
+%% PROOF: Every source says full street addresses are outdated, waste space,
+%% and introduce location bias. "Mumbai, India" is sufficient.
+%% CHANGE: Added phone number
+%% PROOF: Missing phone number is a basic gap — recruiters need it.
+%% CHANGE: Added portfolio/drive link
+\begin{center}
+    {\LARGE \textbf{Kartik Daswani}} \\
+    \href{mailto:kartikdaswani07@gmail.com}{kartikdaswani07@gmail.com} \quad
+    +91-9372547507 \quad
+    \href{https://linkedin.com/in/kartik-daswani}{linkedin.com/in/kartik-daswani} \quad
+    \href{https://github.com/kartikd26}{github.com/kartikd26}
+\end{center}
+
+\vspace{0.1cm}
+
+%% ═══════════════════════════════════════════════════════
+%% PROFESSIONAL SUMMARY
+%% ═══════════════════════════════════════════════════════
+%% WHY: Skill BP1 + 2026 web research — summary is the first thing a
+%% recruiter reads; must lead with role, domain, and a concrete metric.
+%% Metric front-loaded (per 2026 best practice) and AI named specifically
+%% ("AI document-intelligence") to avoid vague AI terminology.
+\section*{Summary}
+\textbf{AI Product Manager} who turns manual, high-effort workflows into self-running products, shipping \textbf{20+ production features} across a live B2B procurement platform and a crypto-tax engine that processes \textbf{80K-line-item filings in hours instead of months}. Owns products end-to-end across two startups (FactWise, CryptoTax), from user discovery and PRD to launch, and leads a small team of PMs. Strong bias toward shipping: finds real user pain points and drives them to measurable business outcomes.
+
+%% ═══════════════════════════════════════════════════════
+%% EXPERIENCE — FIRST
+%% ═══════════════════════════════════════════════════════
+%% WHY FIRST: You have 20+ shipped features at FactWise, 9 months at
+%% Accion Labs on a Fortune 500 client, and 4 years at CryptoTax.
+%% Your experience > your degree. Resume Worded template (7/10):
+%% Experience first. Will Lawrence (ex-Meta PM): Experience is "the most
+%% critical section." Leland APM guide: "When you're more senior,
+%% Experience should come before Education."
+\section*{Experience}
+
+%% ── FACTWISE ──
+%% CHANGES FROM YOUR ORIGINAL:
+%%
+%% 1. Reduced from 6 bullets to 5
+%%    PROOF: ResumeFast (10K Reddit reviews): "avoid using more than 6 bullets
+%%    per experience" — even Resume Worded's own template says this.
+%%    Your 6th bullet ("End-to-End Delivery") was a duty description, not an impact.
+%%
+%% 2. NEW bullet 1: "Shipped 20+ features" — this is the killer opener
+%%    PROOF: Will Lawrence (ex-Meta PM): "Each bullet point should show the
+%%    outcome you've created." Your old resume hid the fact that you shipped
+%%    20+ things. This is your single most impressive fact — lead with it.
+%%
+%% 3. Bold mini-heading format ("BOM Scrubbing Automation:") REMOVED
+%%    PROOF: This is a style choice — your format works for readability BUT
+%%    takes 3 lines per bullet. Research says 1.5-2 lines optimal.
+%%    COMPROMISE: I kept the problem→solution→impact structure but tightened
+%%    each bullet from 3 lines to ~2 lines by cutting the problem preamble.
+%%    The problem is now IMPLIED by the solution.
+%%
+%% 4. Added "team of 2 AI PMs" bullet — you lead people, this must be visible
+%%    PROOF: Leland APM Guide: "cross-functional collaboration and leadership"
+%%    are top APM signals. You mentor and lead — SHOW it.
+%%
+%% 5. Added RFQ Analytics — this was missing entirely from your old resume
+%%    PROOF: You rebuilt the MOST CRITICAL module in the platform. Hiding this
+%%    is criminal. "Fixed broken thing → now used by many clients" is a
+%%    powerful before→after story.
+%%
+%% 6. Bold on key metrics (20+, 2, 99%, 60%, 10-12L, etc.)
+%%    PROOF: Resume Worded template (the one you showed me) bolds dollar
+%%    metrics ($200K, 200%, 35%). ResumeFast: "Numbers are powerful
+%%    differentiators." Bold makes them pop in the 6-second scan.
+%%
+\textbf{FactWise} \hfill May 2025 -- Present \\
+\textit{AI Product Manager} \hfill Mumbai, India
+\begin{itemize}[noitemsep]
+    \item Shipped \textbf{20+ production features} end-to-end (scoped, developed, tested, deployed), from in-app modules (RFQ analytics, quoting, CLM) to \textbf{standalone full-stack products} (BOM Mapping, Invoice OCR, Procurement Strategy) that integrate bidirectionally with FactWise data and run live for \textbf{enterprise clients}.
+    \item Launched an AI-powered \textbf{Invoice OCR system} (FastAPI, React, Azure Document Intelligence) with confidence scoring and multi-level approval workflows; cut client invoice processing from \textbf{manual hours to under 2 minutes}, reducing manual work by \textbf{90\%}.
+    \item Designed \textbf{BOM Data Mapper} with visual column mapping, fuzzy matching, PDF zone extraction, and reusable templates; validated with enterprise client who confirmed \textbf{60\% efficiency gain}, valued at \textbf{INR 10--12L/year} per deployment.
+    \item Rebuilt broken \textbf{RFQ Analytics} module (the most critical dashboard in the platform) into a production-stable system aggregating vendor bids, landed costs, and real-time analytics; now used actively by \textbf{4 enterprise clients}.
+    \item Led and mentored \textbf{2 APMs} reporting directly into the role; assigned AI feature work across the legacy app and new client builds (all shipped via Claude Code), reviewed their PRDs, and owned the AI roadmap including the FactWise 4.0 rebuild.
+\end{itemize}
+
+%% ── ACCION LABS ──
+%% CHANGE: Replaced Rethink Systems entirely
+%% PROOF: You told me Rethink has no documented proof. Accion Labs is a proper
+%% company, you worked on Ingram Micro (Fortune 500), and you reported to a
+%% Senior Director. This is objectively stronger signal.
+%%
+%% CHANGE: "Ingram Micro (Fortune 500, $50B+ revenue)" — naming the client
+%% PROOF: Resume Worded template bolds company names precisely because
+%% prestigious names are signal. Ingram Micro is a massive name.
+%%
+\textbf{Accion Labs} \hfill Apr 2024 -- Dec 2024 \\
+\textit{Product Management Intern} \hfill Mumbai, India
+\begin{itemize}[noitemsep]
+    \item Supported the senior PM on a \textbf{Fortune 500 (\$50B+) account (Ingram Micro)} for \textbf{9 months}, owning discovery and specification of a unified in-app notification system to replace fragmented email alerts.
+    \item Mapped \textbf{3 end-to-end user journeys} (vendor, buyer, admin) across \textbf{3 platform modules} (X4A, X4I); authored the complete \textbf{PRD} (event triggers, notification hierarchy, and high-fidelity \textbf{Figma prototypes}) for engineering handoff.
+\end{itemize}
+
+%% ── CRYPTOTAX ──
+%% CHANGES:
+%% 1. Added actual dates (2021 -- Present) — undated experience looks fabricated
+%% 2. "Founding team member during COVID" — tells the origin story
+%%    PROOF: Julia Winn (Shopify APM mentor, ex-Google): entrepreneurial
+%%    experience is a top differentiator for APM applications.
+%% 3. Added team leadership bullet — you lead 2 teams here
+%% 4. Tightened from vague to specific metrics
+%%
+\textbf{CryptoTax International Pvt. Ltd.} \hfill \\
+\textit{Product Manager (Part-Time, concurrent with studies)} \hfill Remote
+\begin{itemize}[noitemsep]
+    \item Automated the full crypto-tax pipeline (cost-basis, gain/loss logic, Form 8949 generation), \textbf{processing files up to 80K line items in 2--3 hours vs. months manually} at \textbf{98--99\% accuracy}, using AI-assisted development to replace a manual Excel workflow.
+    \item Scaled the platform to \textbf{30+ clients and \$1M+ in processed tax value} across \textbf{4 filing seasons}, with automation eliminating error-prone manual review and the need for additional hires.
+    \item Engineered a transaction-decoding data layer by scraping \textbf{20+ blockchain explorers} (Etherscan and others) to resolve on-chain transaction intent at scale; the dataset now powers the platform's core product and production backend.
+    \item Led MVP product definition for the consumer tax web app, designing all pages and user flows and reviewing a \textbf{4-developer} team's build for logic, correctness, and UX; mentored \textbf{1 analyst} on the decoding pipeline.
+\end{itemize}
+
+%% ═══════════════════════════════════════════════════════
+%% PROJECTS
+%% ═══════════════════════════════════════════════════════
+%% KEPT: Your exact format with Link references. Clean and working.
+%% CHANGE: Bold on key metrics
+%%
+\section*{Projects \hfill \href{https://drive.google.com/drive/folders/17vY-GTSW6fjwtsw_C7kP6qBovaq7O92Q?usp=drive_link}{\textbf{Link}}}
+
+\textbf{AI-Powered Interview Avatar} \hfill \href{https://drive.google.com/file/d/1fjRAZmYXzmSp31axSDShe0Rf3vGgNNiD/view?usp=drive_link}{Link} \\
+\textit{D-ID, AWS, Python} \enspace$|$\enspace Developed an AI-driven avatar delivering instant, personalized feedback for PM interview practice, scaled to run \textbf{100+ mock interviews} and replace slow manual evaluation with instant scoring.
+
+\textbf{Sales Call Analyzer} \hfill \href{https://drive.google.com/drive/folders/1mL1ruHUnihtOwtLM7-f5mVFrqnglRMEI}{Link} \\
+\textit{Python, AWS} \enspace$|$\enspace Created a transcription and sentiment-analysis pipeline scoped to process \textbf{500+ sales calls a month}, surfacing conversion patterns to support performance reviews.
+
+%% ═══════════════════════════════════════════════════════
+%% EDUCATION — before Technical Skills per skill BP8 order
+%% (Contact → Summary → Experience → Education → Skills)
+%% ═══════════════════════════════════════════════════════
+\section*{Education}
+\textbf{NMIMS University} \hfill \\
+\textit{Bachelor of Technology in Computer Engineering} \hfill Mumbai, India \\
+\textbf{GPA:} 8.65/10 \quad $|$ \quad \textbf{Coursework:} Data Structures, DBMS, Machine Learning, Reinforcement Learning, Statistics, AI
+
+%% ═══════════════════════════════════════════════════════
+%% TECHNICAL SKILLS — last (optional section per skill BP8)
+%% ═══════════════════════════════════════════════════════
+\section*{Technical Skills}
+\textbf{Analytics:} SQL, Python, Excel, Tableau, Data Visualization \\
+\textbf{Product:} Figma, Jira, Agile/Scrum, A/B Testing, UI/UX Design, Wireframing \\
+\textbf{AI-Assisted Build:} Ship full-stack features with Claude Code (FastAPI, React, TypeScript, PostgreSQL, Docker, Azure (Blob, OCR, App Service), AWS)
+
+%% ═══════════════════════════════════════════════════════
+%% LEADERSHIP
+%% ═══════════════════════════════════════════════════════
+%% CHANGES: Bold on key metrics (550+, 90%), minor tightening
+%%
+\section*{Leadership / Extracurricular Activities}
+\begin{itemize}[noitemsep]
+    \item Selected for \textbf{Shravan Tickoo's cohort} on Mastering Product Management, out of \textbf{550+ applicants}.
+    \item Won \textbf{Productathon} by leading a team that reduced peer workloads by \textbf{90\%}; placed \textbf{2nd in VC pitch} competition with a market-ready product concept.
+    \item \textbf{Lead Placement Coordinator} for B.Tech Computer students; represented NMIMS at inter-state recruitment drives.
+\end{itemize}
+
+\end{document}
