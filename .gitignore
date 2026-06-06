@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Cloned skill repos (reference only)
+.resume-tools/
+.design-refs/
+.playwright-mcp/
+*.png
