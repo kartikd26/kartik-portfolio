@@ -4,7 +4,6 @@ import { useRef, useState } from "react";
 import { motion, useScroll, useTransform, useMotionValueEvent } from "motion/react";
 import { Mail, Linkedin, Github } from "lucide-react";
 import LiquidGlassCard from "@/components/LiquidGlassCard";
-import { LiquidButton } from "@/components/ui/liquid-glass-button";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 const criteria = [
@@ -140,19 +139,20 @@ export default function AcceptanceCriteria() {
             <strong>Next Step:</strong> Move this candidate from{" "}
             <span className="notion-inline-code">Backlog</span> to{" "}
             <span className="notion-inline-code">In Progress</span>. Schedule
-            an interview. Or just email him — he responds faster than your CI/CD pipeline.
+            an interview, or just email him. He responds faster than your CI/CD pipeline.
           </div>
         </div>
       </ScrollReveal>
 
-      {/* CTA */}
+      {/* CTA — solid high-contrast button (Notion accent blue) */}
       <ScrollReveal className="mt-8">
         <div className="flex justify-center mb-6">
-          <a href="mailto:kartikdaswani07@gmail.com">
-            <LiquidButton size="xxl" className="text-[#d4d4d4]">
-              <Mail className="size-5 mr-1" />
-              Hire This PM
-            </LiquidButton>
+          <a
+            href="mailto:kartikdaswani07@gmail.com"
+            className="inline-flex items-center gap-2 rounded-lg bg-[#2383e2] hover:bg-[#1a6fc4] text-white font-semibold text-[15px] px-7 py-3.5 transition-colors shadow-[0_2px_12px_rgba(35,131,226,0.35)]"
+          >
+            <Mail className="size-5" />
+            Hire This PM
           </a>
         </div>
       </ScrollReveal>
@@ -161,11 +161,11 @@ export default function AcceptanceCriteria() {
       <ScrollReveal className="mt-4">
         <LiquidGlassCard intensity={6}>
           <div className="p-6 text-center">
-            <div className="text-[13px] text-[#6e6e6e] uppercase tracking-widest mb-3">Contact</div>
+            <div className="text-[13px] text-[#9b9b9b] uppercase tracking-widest mb-3">Contact</div>
             <div className="flex items-center justify-center gap-6 flex-wrap">
               <a
                 href="mailto:kartikdaswani07@gmail.com"
-                className="text-[#c77d48] hover:underline text-[15px] font-medium flex items-center gap-1.5 transition-opacity hover:opacity-80"
+                className="text-[#5e87c9] hover:text-[#7aa3e0] hover:underline text-[15px] font-medium flex items-center gap-1.5 transition-opacity hover:opacity-80"
               >
                 <Mail size={14} />
                 kartikdaswani07@gmail.com
@@ -174,7 +174,7 @@ export default function AcceptanceCriteria() {
                 href="https://linkedin.com/in/kartik-daswani"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#c77d48] hover:underline text-[15px] font-medium flex items-center gap-1.5 transition-opacity hover:opacity-80"
+                className="text-[#5e87c9] hover:text-[#7aa3e0] hover:underline text-[15px] font-medium flex items-center gap-1.5 transition-opacity hover:opacity-80"
               >
                 <Linkedin size={14} />
                 LinkedIn
@@ -183,7 +183,7 @@ export default function AcceptanceCriteria() {
                 href="https://github.com/kartikd26"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#c77d48] hover:underline text-[15px] font-medium flex items-center gap-1.5 transition-opacity hover:opacity-80"
+                className="text-[#5e87c9] hover:text-[#7aa3e0] hover:underline text-[15px] font-medium flex items-center gap-1.5 transition-opacity hover:opacity-80"
               >
                 <Github size={14} />
                 GitHub
