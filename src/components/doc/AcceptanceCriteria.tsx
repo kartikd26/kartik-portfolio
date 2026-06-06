@@ -194,8 +194,7 @@ export default function AcceptanceCriteria() {
       </ScrollReveal>
 
       <div className="mt-8 text-center text-[12px] text-[#6e6e6e]">
-        <p>Built with Next.js, Tailwind, and Framer Motion. Deployed on Vercel.</p>
-        <p className="mt-1">Written as a PRD because the PM couldn&apos;t resist the format.</p>
+        <p>Written as a PRD because the PM couldn&apos;t resist the format.</p>
         <p className="mt-1">© 2026 Kartik Daswani. All rights shipped.</p>
       </div>
     </section>
