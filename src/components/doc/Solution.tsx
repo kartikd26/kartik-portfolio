@@ -8,6 +8,19 @@ import { ExternalLink, Play, X } from "lucide-react";
 
 const products = [
   {
+    emoji: "🤖",
+    title: "FactWise 4.0 — AI-Native Procurement Platform",
+    problem: "The legacy platform wasn't built for AI agents or a multi-tenant enterprise network — every procurement action needed a human in the loop, and no capability was safely callable by external AI.",
+    solution: "Driving an AI-first rebuild: an MCP gateway that publishes FactWise capabilities as agent-callable tools with a read-only safety ceiling (no irreversible writes exposed), over a full multi-tenant network model. FastAPI/Postgres backend, Next.js 15 frontend, governed by a spec-driven process with human design-approval gates.",
+    impact: "281 live API endpoints and 10 agent-callable MCP tools verified over the protocol, across 18+ admin surfaces wired to the real API. Agents can resolve the whole signup → enterprise → entity → industry flow but cannot silently create accounts.",
+    metric: "10 live MCP agent tools",
+    tag: "notion-tag-blue",
+    company: "FactWise",
+    links: [
+      { label: "FactWise", href: "https://factwise.io", icon: "🌐" },
+    ],
+  },
+  {
     emoji: "🏗️",
     title: "AI Invoice OCR System",
     problem: "Clients spent hours keying invoice data by hand — slow, error-prone, unscalable.",

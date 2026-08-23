@@ -8,11 +8,11 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 
 const metrics = [
   { value: 20, suffix: "+", label: "Features shipped", sub: "PRD → production" },
+  { value: 281, suffix: "", label: "Live API endpoints", sub: "FactWise 4.0 platform" },
+  { value: 10, suffix: "", label: "MCP agent tools", sub: "Verified over the protocol" },
   { value: 90, suffix: "%", label: "Manual work cut", sub: "Invoice OCR" },
-  { value: 2, suffix: "", label: "Full products built", sub: "Solo, shipped to production" },
   { value: 60, suffix: "%", label: "Efficiency gain", sub: "BOM Mapper, client-validated" },
   { value: 1, prefix: "$", suffix: "M+", label: "Tax value processed", sub: "CryptoTax · 30+ clients" },
-  { value: 1, suffix: "st", label: "Productathon", sub: "Won 1st place" },
 ];
 
 function AnimatedMetric({
