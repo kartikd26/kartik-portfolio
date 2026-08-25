@@ -1,10 +1,10 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import LiquidGlassCard from "@/components/LiquidGlassCard";
 import { ScrollReveal } from "@/components/ScrollReveal";
-import { ExternalLink, Play, X } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const products = [
   {
@@ -77,11 +77,9 @@ const products = [
 function ProductCard({
   item,
   index,
-  onVideoRequest,
 }: {
   item: (typeof products)[0];
   index: number;
-  onVideoRequest: (title: string) => void;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -132,14 +130,6 @@ function ProductCard({
                   <ExternalLink size={9} />
                 </a>
               ))}
-              {/* Video demo request button */}
-              <button
-                onClick={() => onVideoRequest(item.title)}
-                className="inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded-md bg-white/[0.05] text-[#9b9b9b] hover:text-[#c77d48] hover:bg-white/[0.08] transition-colors border border-white/[0.06]"
-              >
-                <Play size={9} className="fill-current" />
-                Watch demo
-              </button>
             </div>
           </div>
         </div>
@@ -148,58 +138,7 @@ function ProductCard({
   );
 }
 
-/** Simple email-request modal for private demos */
-function DemoRequestModal({ title, onClose }: { title: string; onClose: () => void }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="fixed inset-0 z-50 flex items-center justify-center p-4"
-      style={{ background: "rgba(0,0,0,0.7)", backdropFilter: "blur(8px)" }}
-      onClick={onClose}
-    >
-      <motion.div
-        initial={{ scale: 0.9, y: 20 }}
-        animate={{ scale: 1, y: 0 }}
-        exit={{ scale: 0.9, y: 20 }}
-        onClick={(e) => e.stopPropagation()}
-        className="max-w-sm w-full rounded-2xl overflow-hidden"
-        style={{
-          background: "rgba(20,20,20,0.95)",
-          border: "1px solid rgba(255,255,255,0.1)",
-          boxShadow: "0 24px 64px rgba(0,0,0,0.5)",
-        }}
-      >
-        <div className="p-6">
-          <div className="flex items-center justify-between mb-4">
-            <div className="text-[15px] font-semibold text-[#d4d4d4]">Request Demo</div>
-            <button onClick={onClose} className="text-[#6e6e6e] hover:text-[#d4d4d4] transition-colors">
-              <X size={16} />
-            </button>
-          </div>
-          <p className="text-[13px] text-[#6e6e6e] leading-relaxed mb-4">
-            The <strong className="text-[#d4d4d4]">{title}</strong> demo includes live footage of real client data — so it stays off YouTube.
-          </p>
-          <p className="text-[13px] text-[#9b9b9b] leading-relaxed mb-5">
-            Email me and I'll send a private link within the hour.
-          </p>
-          <a
-            href={`mailto:kartikdaswani07@gmail.com?subject=Demo Request: ${encodeURIComponent(title)}`}
-            className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl text-[13px] font-medium text-[#0a0a0a] transition-opacity hover:opacity-90"
-            style={{ background: "linear-gradient(135deg, #c77d48, #d4922e)" }}
-          >
-            Request via Email
-          </a>
-        </div>
-      </motion.div>
-    </motion.div>
-  );
-}
-
 export default function Solution() {
-  const [demoTitle, setDemoTitle] = useState<string | null>(null);
-
   return (
     <section id="solution" className="py-6">
       <ScrollReveal>
@@ -213,12 +152,7 @@ export default function Solution() {
 
       <div className="space-y-3 mb-6">
         {products.map((item, i) => (
-          <ProductCard
-            key={item.title}
-            item={item}
-            index={i}
-            onVideoRequest={(title) => setDemoTitle(title)}
-          />
+          <ProductCard key={item.title} item={item} index={i} />
         ))}
       </div>
 
@@ -235,11 +169,6 @@ export default function Solution() {
       </ScrollReveal>
 
       <div className="notion-divider" />
-
-      {/* Demo request modal */}
-      {demoTitle && (
-        <DemoRequestModal title={demoTitle} onClose={() => setDemoTitle(null)} />
-      )}
     </section>
   );
 }

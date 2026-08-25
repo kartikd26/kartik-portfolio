@@ -9,6 +9,7 @@ const sections = [
   { id: "research", label: "User Research", icon: "🔍" },
   { id: "persona", label: "User Persona", icon: "👤" },
   { id: "solution", label: "Proposed Solution", icon: "💡" },
+  { id: "demos", label: "See it Running", icon: "🎬" },
   { id: "metrics", label: "Success Metrics", icon: "📊" },
   { id: "backlog", label: "Shipped Backlog", icon: "🚀" },
   { id: "thinking", label: "Product Thinking", icon: "🧠" },

@@ -13,7 +13,7 @@ const properties = [
   { key: "Owner", value: "Kartik Daswani" },
   { key: "Role", value: "AI Product Manager" },
   { key: "Location", value: "Mumbai, India" },
-  { key: "Version", value: "v2.0 — June 2026" },
+  { key: "Version", value: "v2.1 · Aug 2026" },
   {
     key: "Tags",
     value: null,

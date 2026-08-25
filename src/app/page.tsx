@@ -4,6 +4,7 @@ import ProblemStatement from "@/components/doc/ProblemStatement";
 import UserResearch from "@/components/doc/UserResearch";
 import Persona from "@/components/doc/Persona";
 import Solution from "@/components/doc/Solution";
+import Demos from "@/components/doc/Demos";
 import Metrics from "@/components/doc/Metrics";
 import Backlog from "@/components/doc/Backlog";
 import ProductThinking from "@/components/doc/ProductThinking";
@@ -25,6 +26,7 @@ export default function Home() {
             <UserResearch />
             <Persona />
             <Solution />
+            <Demos />
             <Metrics />
             <Backlog />
             <ProductThinking />
