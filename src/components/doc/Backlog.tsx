@@ -4,6 +4,9 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { TracingBeam, TracingBeamItem } from "@/components/ui/tracing-beam";
 import LiquidGlassCard from "@/components/LiquidGlassCard";
 import { ExternalLink, Play } from "lucide-react";
+import { useDemoVideo } from "@/components/DemoVideoProvider";
+
+type BacklogLink = { label: string; href: string; icon: React.ReactNode };
 
 const backlog = [
   {
@@ -16,10 +19,8 @@ const backlog = [
     stack: ["FastAPI", "React", "Azure Doc Intelligence"],
     company: "FactWise",
     desc: "End-to-end invoice processing: OCR extraction, confidence scoring, multi-level approval workflows. Replaced hours of manual data entry with sub-2-minute automated pipeline.",
-    links: [
-      { label: "Live product", href: "https://factwise.io", icon: <ExternalLink size={10} /> },
-      { label: "Request demo", href: "mailto:kartikdaswani07@gmail.com?subject=Demo Request: Invoice OCR System", icon: <Play size={10} className="fill-current" /> },
-    ],
+    demoId: "invoice-ocr" as string | undefined,
+    links: [] as BacklogLink[],
   },
   {
     id: "CASE-002",
@@ -31,10 +32,10 @@ const backlog = [
     stack: ["React", "TypeScript", "PostgreSQL"],
     company: "FactWise",
     desc: "The platform's most critical dashboard was broken beyond repair. Rebuilt from scratch — vendor bid aggregation, landed cost calculations, real-time analytics. Now used actively by 4 enterprise clients.",
+    demoId: undefined as string | undefined,
     links: [
       { label: "Live product", href: "https://factwise.io", icon: <ExternalLink size={10} /> },
-      { label: "Request demo", href: "mailto:kartikdaswani07@gmail.com?subject=Demo Request: RFQ Analytics", icon: <Play size={10} className="fill-current" /> },
-    ],
+    ] as BacklogLink[],
   },
   {
     id: "CASE-003",
@@ -46,10 +47,8 @@ const backlog = [
     stack: ["React", "Python", "PDF extraction"],
     company: "FactWise",
     desc: "Visual column mapping tool with fuzzy matching, PDF zone extraction, reusable templates. Enterprise client confirmed efficiency gain worth INR 10–12L/year per deployment.",
-    links: [
-      { label: "Live product", href: "https://factwise.io", icon: <ExternalLink size={10} /> },
-      { label: "Request demo", href: "mailto:kartikdaswani07@gmail.com?subject=Demo Request: BOM Mapper", icon: <Play size={10} className="fill-current" /> },
-    ],
+    demoId: "bom-mapper" as string | undefined,
+    links: [] as BacklogLink[],
   },
   {
     id: "CASE-004",
@@ -61,13 +60,15 @@ const backlog = [
     stack: ["Python", "Web scraping", "AI-assisted dev"],
     company: "CryptoTax International",
     desc: "Automated the full crypto-tax pipeline — cost-basis, gain/loss logic, Form 8949 generation. Processes files up to 80K line items in 2–3 hours vs. months manually, at 98–99% accuracy. Scaled to 30+ clients and $1M+ in processed tax value.",
+    demoId: undefined as string | undefined,
     links: [
       { label: "CryptoTax.international", href: "https://cryptotax.international", icon: <ExternalLink size={10} /> },
-    ],
+    ] as BacklogLink[],
   },
 ];
 
 export default function Backlog() {
+  const { openDemo } = useDemoVideo();
   return (
     <section id="backlog" className="py-6">
       <ScrollReveal>
@@ -114,6 +115,15 @@ export default function Backlog() {
               </div>
               {/* Links row */}
               <div className="px-5 py-2.5 border-t border-white/[0.04] flex items-center gap-2 flex-wrap">
+                {item.demoId && (
+                  <button
+                    onClick={() => openDemo(item.demoId as string)}
+                    className="inline-flex items-center gap-1 text-[11px] px-2 py-1 rounded-md bg-[#c77d48]/15 text-[#e0a56e] hover:bg-[#c77d48]/25 hover:text-[#f0c090] transition-colors border border-[#c77d48]/30"
+                  >
+                    <Play size={10} className="fill-current" />
+                    Watch demo
+                  </button>
+                )}
                 {item.links.map((link) => (
                   <a
                     key={link.label}

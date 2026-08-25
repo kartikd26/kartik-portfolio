@@ -4,7 +4,8 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import LiquidGlassCard from "@/components/LiquidGlassCard";
 import { ScrollReveal } from "@/components/ScrollReveal";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Play } from "lucide-react";
+import { useDemoVideo } from "@/components/DemoVideoProvider";
 
 const products = [
   {
@@ -16,6 +17,7 @@ const products = [
     metric: "10 live MCP agent tools",
     tag: "notion-tag-blue",
     company: "FactWise",
+    demoId: undefined as string | undefined,
     links: [
       { label: "FactWise", href: "https://factwise.io", icon: "🌐" },
     ],
@@ -29,9 +31,8 @@ const products = [
     metric: "90% manual work cut",
     tag: "notion-tag-orange",
     company: "FactWise",
-    links: [
-      { label: "Live at FactWise", href: "https://factwise.io", icon: "🌐" },
-    ],
+    demoId: "invoice-ocr" as string | undefined,
+    links: [] as { label: string; href: string; icon: string }[],
   },
   {
     emoji: "🗺️",
@@ -42,9 +43,8 @@ const products = [
     metric: "60% efficiency gain",
     tag: "notion-tag-green",
     company: "FactWise",
-    links: [
-      { label: "Live at FactWise", href: "https://factwise.io", icon: "🌐" },
-    ],
+    demoId: "bom-mapper" as string | undefined,
+    links: [] as { label: string; href: string; icon: string }[],
   },
   {
     emoji: "📊",
@@ -55,6 +55,7 @@ const products = [
     metric: "Broken → 4 clients live",
     tag: "notion-tag-blue",
     company: "FactWise",
+    demoId: undefined as string | undefined,
     links: [
       { label: "Live at FactWise", href: "https://factwise.io", icon: "🌐" },
     ],
@@ -68,6 +69,7 @@ const products = [
     metric: "Months → 2–3 hours",
     tag: "notion-tag-purple",
     company: "CryptoTax International",
+    demoId: undefined as string | undefined,
     links: [
       { label: "CryptoTax International", href: "https://cryptotax.international", icon: "🌐" },
     ],
@@ -81,6 +83,7 @@ function ProductCard({
   item: (typeof products)[0];
   index: number;
 }) {
+  const { openDemo } = useDemoVideo();
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -116,6 +119,16 @@ function ProductCard({
             </div>
             <div className="flex items-center gap-2 flex-wrap">
               <span className={`notion-tag ${item.tag}`}>{item.metric}</span>
+              {/* Watch demo — plays the real screen recording inline */}
+              {item.demoId && (
+                <button
+                  onClick={() => openDemo(item.demoId as string)}
+                  className="inline-flex items-center gap-1 text-[11px] px-2 py-0.5 rounded-md bg-[#c77d48]/15 text-[#e0a56e] hover:bg-[#c77d48]/25 hover:text-[#f0c090] transition-colors border border-[#c77d48]/30"
+                >
+                  <Play size={9} className="fill-current" />
+                  Watch demo
+                </button>
+              )}
               {/* Links */}
               {item.links.map((link) => (
                 <a

@@ -11,29 +11,32 @@ import ProductThinking from "@/components/doc/ProductThinking";
 import AcceptanceCriteria from "@/components/doc/AcceptanceCriteria";
 import AmbientGlow from "@/components/AmbientGlow";
 import ScrollProgress from "@/components/ScrollProgress";
+import DemoVideoProvider from "@/components/DemoVideoProvider";
 
 export default function Home() {
   return (
     <>
       <ScrollProgress />
       <AmbientGlow />
-      <div className="relative z-10 flex min-h-screen">
-        <Sidebar />
-        <main className="flex-1 lg:ml-56">
-          <article className="notion-page py-12 pb-32">
-            <DocHeader />
-            <ProblemStatement />
-            <UserResearch />
-            <Persona />
-            <Solution />
-            <Demos />
-            <Metrics />
-            <Backlog />
-            <ProductThinking />
-            <AcceptanceCriteria />
-          </article>
-        </main>
-      </div>
+      <DemoVideoProvider>
+        <div className="relative z-10 flex min-h-screen">
+          <Sidebar />
+          <main className="flex-1 lg:ml-56">
+            <article className="notion-page py-12 pb-32">
+              <DocHeader />
+              <ProblemStatement />
+              <UserResearch />
+              <Persona />
+              <Solution />
+              <Demos />
+              <Metrics />
+              <Backlog />
+              <ProductThinking />
+              <AcceptanceCriteria />
+            </article>
+          </main>
+        </div>
+      </DemoVideoProvider>
     </>
   );
 }
